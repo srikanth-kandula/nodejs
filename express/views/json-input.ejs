@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>JSON data input</h1>
+    <script>
+      $.ajax({
+        type: 'POST',
+        url: '/myurl1/jsoninput',
+        data: JSON.stringify({ JSONFirstName: 'Srikanth', JSONLastName: 'Kandula' }),
+        dataType: 'json',
+        contentType: 'application/json'
+      });
+    </script>
+  </body>
+</html>
